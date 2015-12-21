@@ -27,3 +27,9 @@ class LessonsController < ApplicationController
       redirect_to course_path(current_course), alert: error
     end
 end
+
+
+
+
+
+ 
