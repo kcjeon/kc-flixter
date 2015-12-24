@@ -37,15 +37,13 @@
     <% end %>
   </div>
 
+<%= @course.sections.rank(:row_order).each do |section| %>
   <div class="col-sm-8 col-xs-12">
     <!--<%= @course.sections.each do |section| %>-->
-
-    <%= @course.sections.rank(:row_order).each do |section| %>
-
     <br /><br />
     <div class="section">
       <h3>
-      <%= section.title %>
+      <<%= section.title %>
     </h3>
         <%= section.lessons.rank(:row_order).each do |lesson| %>
           <div class="col-xs-12 col-sm-6">
