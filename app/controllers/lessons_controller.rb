@@ -14,7 +14,7 @@ class LessonsController < ApplicationController
   end
 
   def current_course
-    current_section.ccourse
+    current_section.course
   end
 
   def current_section
@@ -26,10 +26,6 @@ class LessonsController < ApplicationController
       error = "You are not enrolled in this course."
       redirect_to course_path(current_course), alert: error
     end
+  end
+
 end
-
-
-
-
-
- 
